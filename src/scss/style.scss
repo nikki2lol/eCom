@@ -1,0 +1,37 @@
+// vendors
+@import "~normalize.css/normalize.css";
+@import '~swiper/swiper-bundle.css';
+
+// helpers
+@import "import/helpers/variables";
+@import 'import/helpers/functions';
+@import "import/helpers/mixin";
+@import "import/helpers/visually-hidden";
+
+// base
+@import "import/base/keyframes";
+@import "import/base/fonts";
+@import "import/base/common";
+
+// components
+@import "import/components/wrapper";
+@import "import/components/header";
+@import "import/components/heading";
+@import "import/components/menu";
+@import "import/components/main";
+@import "import/components/promo";
+@import "import/components/text";
+@import "import/components/tag";
+@import "import/components/link";
+@import "import/components/line";
+@import "import/components/adv";
+@import "import/components/team";
+@import "import/components/techno";
+@import "import/components/frame";
+@import "import/components/services";
+@import "import/components/exp";
+@import "import/components/projects";
+@import "import/components/refs";
+@import "import/components/contacts";
+@import "import/components/form";
+@import "import/components/footer";

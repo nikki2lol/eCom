@@ -1,0 +1,18 @@
+@mixin cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}
+
+@mixin tablet { @media (max-width: 1024px) { @content;} }
+@mixin min-desktop{ @media (min-width: $desktop) { @content; } }
+@mixin medium-desktop{ @media (min-width: 1366px) { @content; } }
+@mixin retina { @media (min-width: $desktop-retina) { @content; } }

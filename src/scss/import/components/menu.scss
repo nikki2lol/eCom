@@ -1,0 +1,56 @@
+.menu{
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 666;
+  &__buttons{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__button{
+    width: rem(60);
+    height: 50%;
+    position: relative;
+    @include cc;
+    &:nth-of-type(1){
+      background-color: $blue;
+    }
+    &:nth-of-type(2){
+      background-color: $heaven;
+    }
+    span{
+      color: #ffffff;
+      font-weight: $chakra;
+      font-size: rem(18);
+      line-height: rem(24);
+      transform: rotate(90deg);
+      white-space: nowrap;
+      position: relative;
+      z-index: 1;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0);
+      transition: background-color 0.3s;
+    }
+
+    &:hover{
+      &::before{
+        background-color: rgba(0,0,0,0.1);
+      }
+    }
+    &:active{
+      &::before{
+        background-color: rgba(0,0,0,0.2);
+      }
+    }
+  }
+
+}

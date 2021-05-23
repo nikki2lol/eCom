@@ -1,0 +1,58 @@
+.services{
+  &__wrapper{
+    padding-left: 4%;
+  }
+  &__content{
+    padding: rem(106) rem(136) rem(140) rem(56);
+    display: flex;
+  }
+  &__left{
+    width: 15%;
+    min-width: rem(100);
+    margin-right: 5%;
+  }
+  &__right{
+    right: 80%;
+  }
+  &__tag{
+    margin-top: rem(14);
+  }
+  &__title{
+    font-family: $arvo;
+    font-size: rem(56);
+    line-height: rem(68);
+    position: relative;
+    margin-bottom: rem(90);
+    span{
+      font-family: $scp;
+      color: $blue;
+      font-weight: 500;
+    }
+    @include medium-desktop{
+      max-width: rem(970);
+    }
+  }
+  &__list{
+    max-width: rem(880);
+    columns: 2;
+    column-gap: rem(50);
+  }
+  &__item{
+    display: flex;
+    font-size: rem(28);
+    line-height: rem(44);
+    padding-left: rem(40);
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: rem(15);
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 0 7px 10px;
+      border-color: transparent transparent transparent $d-gray;
+    }
+  }
+}

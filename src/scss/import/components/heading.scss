@@ -1,0 +1,17 @@
+.heading{
+  font-size: rem(66);
+  line-height: rem(80);
+  font-weight: 400;
+  font-family: $arvo;
+  display: flex;
+  flex-wrap: wrap;
+  &::after{
+    content: '';
+    display: inline-block;
+    height: rem(73);
+    width: rem(4);
+    background-color: #6CB6E1;
+    margin-left: rem(10);
+    transform: translateY(rem(4));
+  }
+}

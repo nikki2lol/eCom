@@ -1,0 +1,60 @@
+.link{
+  color: $blue;
+  position: relative;
+  padding-left: rem(26);
+  padding-right: rem(26);
+  font-size: rem(18);
+  line-height: rem(24);
+  font-weight: 500;
+  font-family: $chakra;
+  display: inline-flex;
+  align-items: center;
+  transform: translateX(#{rem(-8)});
+  &::before{
+    content: '[';
+    display: block;
+    text-align: center;
+    width: rem(22);
+    min-width: rem(22);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate3d(0,-50%,0);
+    font-size: rem(36);
+    line-height: rem(48);
+    transition: transform 0.3s;
+  }
+  &::after{
+    content: ']';
+    display: block;
+    text-align: center;
+    width: rem(22);
+    min-width: rem(22);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate3d(0,-50%,0);
+    font-size: rem(36);
+    line-height: rem(48);
+    transition: transform 0.3s;
+  }
+  span{
+    display: block;
+    transform: translateY(rem(1));
+    white-space: nowrap;
+  }
+  &:hover{
+    &::before{
+      transform: translate3d(#{rem(-5)},-50%,0);
+    }
+    &::after{
+      transform: translate3d(#{rem(5)},-50%,0);
+    }
+
+  }
+  &--button{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+  }
+}

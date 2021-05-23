@@ -1,0 +1,13 @@
+.line{
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: rem(4);
+    border-radius: 10px;
+    background-color: $d-gray;
+  }
+}

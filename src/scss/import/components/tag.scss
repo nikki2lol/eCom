@@ -1,0 +1,24 @@
+.tag{
+  height: rem(35);
+  padding-left: rem(10);
+  padding-right: rem(10);
+  padding-top: rem(7);
+  padding-bottom: rem(7);
+  background-color: $gray;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  span{
+    font-size: rem(16);
+    line-height: rem(21);
+    font-family: $chakra;
+    display: inline-flex;
+    align-items: center;
+  }
+  &--blue{
+    color: $blue;
+    span{
+      color: $blue;
+    }
+  }
+}

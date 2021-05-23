@@ -1,0 +1,6 @@
+.global-wrapper{
+  position: relative;
+  &--scrolled{
+    padding-top: rem(87);
+  }
+}

@@ -1,0 +1,95 @@
+.frame{
+  border: rem(4) solid $d-gray;
+  border-right: none;
+  border-radius: 10px;
+  &__header{
+    height: rem(38);
+    padding-left: rem(15);
+    padding-right: rem(15);
+    padding-top: rem(6);
+    padding-bottom: rem(10);
+    background-color: $d-gray;
+    display: flex;
+    div{
+      width: rem(22);
+      min-width: rem(22);
+      height: rem(22);
+      min-height: rem(22);
+      border-radius: 50%;
+      position: relative;
+      @include cc;
+      & + div{
+        margin-left: rem(12);
+      }
+      &:nth-of-type(1){
+        background-color: $heaven;
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: rem(12);
+          height: rem(2);
+          display: block;
+          background-color: $d-gray;
+        }
+        &::before{
+          transform: translate(-50%,-50%) rotate(-45deg);
+        }
+        &::after{
+          transform: translate(-50%,-50%) rotate(45deg);
+        }
+      }
+      &:nth-of-type(2){
+        background-color: $main;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: rem(12);
+          height: rem(2);
+          display: block;
+          background-color: $d-gray;
+          transform: translate(-50%,-50%);
+        }
+      }
+      &:nth-of-type(3){
+        background-color: $blue;
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          display: block;
+          //background-color: $d-gray;
+          background-repeat: no-repeat;
+          background-position: 50%;
+          background-size: contain;
+        }
+        &::before{
+          width: 0;
+          height: 0;
+          bottom: rem(6);
+          left: rem(6);
+          border-style: solid;
+          border-width: rem(7) 0 0 rem(7);
+          border-color: transparent transparent transparent $d-gray;
+          border-top-left-radius: 2px;
+          border-bottom-right-radius: 2px;
+        }
+        &::after{
+          width: 0;
+          height: 0;
+          top: rem(6);
+          right: rem(6);
+          border-style: solid;
+          border-width: 0 rem(7) rem(7) 0;
+          border-color: transparent $d-gray transparent transparent;
+          border-top-left-radius: 2px;
+          border-bottom-right-radius: 2px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.main{
+  &__promo{
+    margin-bottom: rem(170);
+  }
+  &__advantages{
+    margin-bottom: rem(230);
+  }
+  &__team{
+    margin-bottom: rem(240);
+  }
+  &__technologies{
+    margin-bottom: rem(230);
+  }
+  &__services{
+    margin-bottom: rem(230);
+  }
+  &__expertise{
+    margin-bottom: rem(230);
+  }
+  &__projects{
+    margin-bottom: rem(230);
+  }
+  &__references{
+    margin-bottom: rem(230);
+  }
+  &__paste{
+    max-width: 100%;
+    margin-bottom: rem(230);
+    height: rem(80);
+    overflow: hidden;
+    div{
+      display: inline-block;
+      white-space: nowrap;
+      font-family: $arvo;
+      font-size: rem(66);
+      line-height: rem(80);
+      font-style: normal;
+      font-weight: 400;
+      text-align: left;
+      color: $blue;
+      transform: translateX(-21%);
+
+    }
+  }
+  &__contacts{
+    margin-bottom: rem(230);
+  }
+}
