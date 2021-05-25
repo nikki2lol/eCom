@@ -28,15 +28,15 @@
     font-size: rem(96);
     line-height: rem(116);
     margin-bottom: rem(82);
-    &::after{
-      content: '';
-      display: inline-block;
-      height: rem(89);
-      width: rem(4);
-      background-color: #6CB6E1;
-      margin-left: rem(10);
-      transform: translateY(rem(14));
-    }
+    //&::after{
+    //  content: '';
+    //  display: inline-block;
+    //  height: rem(89);
+    //  width: rem(4);
+    //  background-color: #6CB6E1;
+    //  margin-left: rem(10);
+    //  transform: translateY(rem(14));
+    //}
   }
   &__text{
     max-width: rem(500);

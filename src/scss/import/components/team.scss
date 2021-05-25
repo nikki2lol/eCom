@@ -154,14 +154,58 @@
       //margin-left: rem(10);
     }
     &-number{
-      font-family: $scp;
-      font-size: rem(200);
-      line-height: rem(240);
-      font-weight: 700;
-      color: #ffffff;
-      //text-shadow: $blue -2px 2px 0, $blue 2px -2px 0, $blue 10px -12px 0px;
+      height: rem(240);
+      position: relative;
+      h4{
+        font-family: $scp;
+        font-size: rem(200);
+        line-height: rem(240);
+        font-weight: 700;
+        color: #ffffff;
+        display: block;
+      }
       img {
         display: block;
+      }
+      &-front {
+        font-family: $scp;
+        font-size: rem(200);
+        line-height: rem(240);
+        font-weight: 700;
+        color: #ffffff;
+        position: relative;
+        z-index: 2;
+        transform: translate(-2px, 2px);
+        text-shadow:
+            -1px 0 0   $blue,
+            0   -1px 0    $blue,
+            -0    1px 0   $blue,
+            0    1px 0    $blue,
+            -1px -0   0   $blue,
+            1px -0   0    $blue,
+            -1px  0   0  $blue,
+            1px  0   0   $blue,
+            -1px -1px 0   $blue,
+            1px -1px 0   $blue,
+            -1px  1px 0   $blue,
+            1px  1px 0   $blue,
+            -1px -1px 0   $blue,
+            1px -1px 0   $blue,
+            -1px  1px 0   $blue,
+            1px  1px 0    $blue;
+      }
+      &-back{
+        font-family: $scp;
+        font-size: rem(200);
+        line-height: rem(240);
+        font-weight: 700;
+        color: $blue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        @include text3d($blue);
+
       }
     }
     &-sign{
@@ -176,6 +220,7 @@
     bottom: rem(-120);
     right: rem(-10);
     width: 100%;
+    pointer-events: none;
   }
   &__decor{
     &-top{

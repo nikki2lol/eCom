@@ -11,7 +11,7 @@
     font-size: rem(56);
     line-height: rem(68);
     font-family: $arvo;
-    span{
+    strong{
       font-family: $scp;
       color: $blue;
       font-weight: 500;
@@ -58,6 +58,105 @@
       font-size: rem(28);
       line-height: rem(36);
       max-width: rem(335);
+    }
+    &-cards{
+      width: 130px;
+      height: 130px;
+      position: relative;
+      margin-bottom: 35px;
+      transform: translateY(32px);
+      //perspective: 1000px;
+    }
+    &-card{
+      width: 120px;
+      height: 100px;
+      transform: rotateY(-35deg) rotateX(-31deg) rotateZ(20deg);
+      transform-style: preserve-3d;
+      backface-visibility: visible;
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      &:nth-of-type(2){
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        z-index: 2;
+        .adv{
+          &__item{
+            &-top{
+              background-color: #657CCC;
+            }
+            &-main{
+              border-color: #657CCC;
+            }
+            &-right{
+
+              background-color: #657CCC;
+            }
+          }
+        }
+      }
+      &:nth-of-type(3){
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        z-index: 1;
+        .adv{
+          &__item{
+            &-top{
+              background-color: #7D95EA;
+            }
+            &-main{
+              border-color: #7D95EA;
+            }
+            &-right{
+              background-color: #7D95EA;
+            }
+          }
+        }
+      }
+    }
+    &-top{
+      width: calc(100% + 2px);
+      height: 8px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotateX(-90deg);
+      transform-origin: 50% 0;
+      background-color: $blue;
+    }
+    &-main{
+      width: calc(100% + 1px);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      transform: translateZ(0);
+      transform-style: preserve-3d;
+      border: 2px solid #405bb8;
+      background-color: #ffffff;
+      img {
+        display: block;
+        width: 65%;
+        height: 65%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+    &-right{
+      position: absolute;
+      width: 9px;
+      height: 100%;
+      top: 0;
+      right: -1px;
+      transform: rotateY(-90deg);
+      transform-origin: 100% 50%;
+      background-color: $blue;
     }
   }
 

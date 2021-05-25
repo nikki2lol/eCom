@@ -11,3 +11,9 @@
   90% { -webkit-transform: translate(2px, 0)}
   100% { -webkit-transform: translate(1px, 0)}
 }
+@keyframes blink {
+  from, to {
+    background-color: transparent; }
+  50% {
+    background-color: #6CB6E1; }
+}
